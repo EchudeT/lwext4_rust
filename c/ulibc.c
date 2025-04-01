@@ -65,7 +65,7 @@ int strncmp(const char *_l, const char *_r, size_t n)
 
 // fix me
 __attribute__((weak)) 
-FILE *stdout = NULL;
+FILE *const stdout = NULL;
 
 __attribute__((weak)) 
 int fflush(FILE *f)
