@@ -37,7 +37,7 @@ char *__stpcpy(char *restrict d, const char *restrict s)
         return d;
 }
 
-__attribute__((weak)) 
+
 char *strcpy(char *restrict dest, const char *restrict src)
 {
         __stpcpy(dest, src);
