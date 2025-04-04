@@ -40,7 +40,6 @@ char *__stpcpy(char *restrict d, const char *restrict s)
 __attribute__((weak)) 
 char *strcpy(char *restrict dest, const char *restrict src)
 {
-        fflush(0);
         __stpcpy(dest, src);
         return dest;
 }
@@ -71,7 +70,7 @@ FILE *const stdout = NULL;
 __attribute__((weak)) 
 int fflush(FILE *f)
 {
-        printf("fflush() is not implemented !\n");
+        // printf("fflush() is not implemented !\n");
         return 0;
 }
 
