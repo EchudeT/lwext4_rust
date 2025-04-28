@@ -1490,7 +1490,7 @@ int ext4_fremove(const char *path)
 		ext4_fs_put_inode_ref(&child);
 		ext4_trans_abort(mp);
 		EXT4_MP_UNLOCK(mp);
-		return r;
+		return EISDIR;
 	}
 
 	/*Link count will be zero, the inode should be freed. */
