@@ -18,7 +18,7 @@ print = ["printf-compat"]
 
 [dependencies]
 log = "0.4"
-printf-compat = { version = "0.1", default-features = false, optional = true }
+printf-compat = { git = "https://github.com/EchudeT/printf-compat.git", default-features = false, optional = true }
 
 # See: https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html
 [build-dependencies]
